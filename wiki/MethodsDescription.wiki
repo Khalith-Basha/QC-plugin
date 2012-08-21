@@ -15,6 +15,8 @@ Below is the snippet of _establishConnection_ code:
 
 https://ags-qcplugin.googlecode.com/svn/wiki/images/establishConnection.png
 
+http://code.google.com/p/ags-qcplugin/source/browse/trunk/images/connectProject.png
+
 === _login_ ===
 
 After getting the QC connection instance, user should login to QC using valid user credentials.  The function _login_ is used to login to QC by passing the QC connection instance and valid username, password. The _login_ function will return Boolean status as True on successful login and False on unsuccessful login.
