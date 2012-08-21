@@ -13,8 +13,6 @@ The function _establishConnection_   is used to establish the connection with Qu
 
 Below is the snippet of _establishConnection_ code:
 
-https://ags-qcplugin.googlecode.com/svn/wiki/images/establishConnection.png
-
 http://code.google.com/p/ags-qcplugin/source/browse/trunk/images/connectProject.png
 
 === _login_ ===
