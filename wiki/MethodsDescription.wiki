@@ -40,7 +40,7 @@ The function _getTestSet_ is used to get a particular test set form the specifie
 Below is the snippet of _getTestSet_ code:
 
 
-https://ags-qcplugin.googlecode.com/svn/wiki/images/getTestSet.png
+https://ags-qcplugin.googlecode.com/svn/trunk/images/getTestSet.png
 
 === _*getAllTestSets*_ ===
 
