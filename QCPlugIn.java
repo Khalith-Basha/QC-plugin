@@ -4,7 +4,7 @@
  *
  * Licensed under the General Public License, Version 3.0 (the "License") you may not use this file except in compliance with the License. You may obtain a copy of the License at
  *
- * http://www.gnu.org/licenses/gpl-3.0.txt
+ * 
  *
  * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  *
@@ -60,7 +60,7 @@ public class QCPlugIn {
 	 * @param userName is the valid user name to login 
 	 * @param password is the valid password to login 
 	 * @return  The status of login is returned as True / False 
-	 * @author Srikanth Kasam
+	 * @author Khalith Basha
 	 **/
 	public boolean login(ActiveXComponent objQCconn, String userName, String password) {
 		
@@ -136,7 +136,7 @@ public class QCPlugIn {
 	 * @param folderPath is the folder path of the test set  
 	 * @param testSetName is the test set name	  
 	 * @return  The Test set from the specified folder path  is returned
-	 * @author Srikanth Kasam 
+	 * @author Khalith Basha 
 	 **/		
 	public Dispatch getTestSet(ActiveXComponent objQCconn, String folderPath, String testSetName ) {
 		
@@ -180,7 +180,7 @@ public class QCPlugIn {
 		 * @param objQCconn is the QC Connection instance 
 		 * @param folderPath is the folder path of the test set  		  
 		 * @return Returns a collection of Test sets from the specified folder path
-		 * @author Srikanth Kasam  
+		 * @author Khalith Basha
 		 **/		
 		public Dispatch getAllTestSets(ActiveXComponent objQCconn, String folderPath ) {
 			
@@ -230,7 +230,7 @@ public class QCPlugIn {
 	 *  which are returned from getAllTestSets to get all the tests form the test set.
 	 * @param theTestSet is the  Test Set instance		  
 	 * @return  The tests object from the specified Test sets
-	 * @author Srikanth Kasam   
+	 * @author Khalith Basha   
 	 **/
 	public Dispatch getTests(Dispatch theTestSet) {
 		
@@ -278,7 +278,7 @@ public class QCPlugIn {
 	 * list of tests returned form getTests function.
 	 * @param objTest is the instance of Test		  
 	 * @return The test run instance of specified Test  
-	 * @author Srikanth Kasam	 
+	 * @author Khalith Basha	 
 	 **/
 	public Dispatch createTestRunInstance(Dispatch objTest){
 		
@@ -319,7 +319,7 @@ public class QCPlugIn {
 	 *	This method is used to get the test steps factory for the specified test run 
 	 *	@param newRun is the instance of test run		  
 	 * 	@return The Steps of specified test run
-	 * 	@author Srikanth Kasam 
+	 * 	@author Khalith Basha 
 	 **/
 	public Dispatch getTestSteps(Dispatch newRun) {	
 		
@@ -351,7 +351,7 @@ public class QCPlugIn {
 	 * @param status is the status of test run
 	 * @param actualResult is the actual result of test run
 	 * @return The status of updating the test step as True / False
-	 * @author Srikanth Kasam
+	 * @author Khalith Basha
 	 **/
 	public boolean setTestStepStatus(Dispatch theStep, String status, String actualResult) {
 		
@@ -385,7 +385,7 @@ public class QCPlugIn {
 	 * @param attachmentPath is the path of the attachment
 	 * @param objTest is the instance of Test	 		 
 	 * @return The status of attachment as True / False 
-	 * @author Srikanth Kasam
+	 * @author Khalith Basha
 	 **/
 	public boolean attachFile(String attachmentPath, Dispatch objTest){
 		
@@ -437,7 +437,7 @@ public class QCPlugIn {
 	 * This method is used to create the bug factory, this bug factory can be used for creating new bugs.  
 	 * @param objQCconn is the QC connection object  		 
 	 * @return the bug factory instance
-	 * @author Srikanth Kasam
+	 * @author Khalith Basha
 	 **/
 	public Dispatch createBugFactory(ActiveXComponent objQCconn) {
 		
@@ -465,7 +465,7 @@ public class QCPlugIn {
 	 * @param severity is the defect severity
 	 * @param priority is the defect priority		 
 	 * @return The Defect instance 
-	 * @author Srikanth Kasam
+	 * @author Khalith Basha
 	 **/
 	public Dispatch logDefect(Dispatch bugF, String detectedBy, String summary, String description, String severity, String priority){
 		 
@@ -523,7 +523,7 @@ public class QCPlugIn {
 	 * @param priority is the defect priority	
 	 * @param attachmentPath is the attachment path		 
 	 * @return The Defect instance 
-	 * @author Srikanth Kasam
+	 * @author Khalith Basha
 	 **/
 	public Dispatch logDefectWithAttachment(Dispatch bugF, String detectedBy, String summary, String description, String severity, 
 									String priority, String attachmentPath){
@@ -608,7 +608,7 @@ public class QCPlugIn {
 	 * @param theBug is the bug instance
 	 * @param linkObject is the instance to link (either Test/ Test Step) 		 
 	 * @return The status of attachment as True / False
-	 * @author Srikanth Kasam
+	 * @author Khalith Basha
 	 **/
 	
 	public boolean linkDefect(Dispatch theBug, Dispatch linkObject) {
@@ -642,7 +642,7 @@ public class QCPlugIn {
 	 * @param folderPath is the folder path
 	 * @param testSetName is the test set name 		 
 	 * @return The Test Set instance
-	 * @author Srikanth Kasam
+	 * @author Khalith Basha
 	 **/
 	//public Dispatch createTestSet(ActiveXComponent objQCconn, String folderPath, String testSetName) {	
 		
